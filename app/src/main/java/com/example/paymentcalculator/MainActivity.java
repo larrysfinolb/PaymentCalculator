@@ -2,63 +2,55 @@ package com.example.paymentcalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    String paymentIn;
-    float dollarValue;
-    float currentDollars, currentBs;
-    float billInDollars, billInBs;
+    TextView textView_billInDollars;
+    TextView textView_dollarValue;
+    TextView textView_currentDollars, textView_currentBs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        textView_billInDollars = findViewById(R.id.montoTotal);
+        textView_dollarValue = findViewById(R.id.tasaDolar);
+        textView_currentDollars = findViewById(R.id.dolaresActuales);
+        textView_currentBs = findViewById(R.id.bolivaresActuales);
     }
 
     // Funcion para calcular el pago
     public void paymentCalculator(View view) {
-        if (paymentIn == "Dolares") {
-            if (currentDollars >= billInDollars) {
-                currentDollars -= billInDollars;
-                // Cuenta pagada unicamente en dolares
-                billInDollars = 0;
-                billInBs = 0;
-            } else {
-                billInDollars -= currentDollars;
-                currentDollars = 0; // Se acabaron los dolares, hay que completar con Bs
-                billInBs = billInDollars * dollarValue;
-                if (currentBs >= billInBs) {
-                    currentBs -= billInBs;
-                    // Cuenta pagada en dolares y completada en Bs
-                    billInBs = 0;
-                    billInDollars = 0;
-                } else {
-                    System.out.println("No tienes dinero suficiente");
-                }
-            }
-        }
-        else {
+
+        float billInBs = 0;
+        float billInDollars = Float.parseFloat(textView_billInDollars.getText().toString());
+        float dollarValue = Float.parseFloat(textView_dollarValue.getText().toString());
+        float currentDollars = Float.parseFloat(textView_currentDollars.getText().toString());
+        float currentBs = Float.parseFloat(textView_currentBs.getText().toString());
+
+        if (currentDollars >= billInDollars) {
+            currentDollars -= billInDollars; // Pago solo en dolares.
+        } else {
+            billInDollars -= currentDollars; // Pago una parte de dolares.
+            currentDollars = 0; // Me quedo sin dolares.
+            billInBs = billInDollars * dollarValue; // Calculo el resto en bs.
             if (currentBs >= billInBs) {
-                currentBs -= billInBs;
-                // Cuenta pagada unicamente en Bs
-                billInBs = 0;
-                billInDollars = 0;
+                currentBs -= billInBs; // Completo el pago con bs.
             } else {
-                billInBs -= currentBs;
-                currentBs = 0; // Se acabaron los bolivares, hay que completar con Dolares
-                billInDollars = billInBs / dollarValue;
-                if (currentDollars >= billInDollars) {
-                    currentDollars -= billInDollars;
-                    // Cuenta pagada en Bs y completada en Dolares
-                    billInDollars = 0;
-                    billInBs = 0;
-                } else {
-                    System.out.println("No tienes dinero suficiente");
-                }
+                billInBs -= currentBs; // Pago otra parte en dolares.
+                currentBs = 0; // Me quedo sin bs
             }
         }
+
+        Intent intent = new Intent(this, OutputsActivity.class);
+        intent.putExtra("currentDollars", currentDollars);
+        intent.putExtra("currentBs", currentBs);
+        intent.putExtra("billInBs", billInBs);
+        startActivity(intent);
     }
 }
