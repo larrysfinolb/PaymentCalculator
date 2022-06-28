@@ -25,5 +25,25 @@ public class OutputsActivity extends AppCompatActivity {
         currentDollars = data.getFloat("currentDollars");
         currentBs = data.getFloat("currentBs");
         // billInBs = data.getFloat("billInBs");
+
+        float billInBs = (billInDollars - currentDollars) * dollarValue;
+
+        boolean sobranDolares = billInDollars >= currentDollars ? false
+                : true;
+        //System.out.println(billInDollars);
+
+        textView_1.setText(sobranDolares == false
+                ? textView_1.getText() + "No"
+                : textView_1.getText() + "Si");
+
+        textView_2.setText(sobranDolares == false
+                ? textView_2.getText() + "Dolares insuficientes"
+                : textView_2.getText() + "$" + Float.toString(billInDollars));
+
+        textView_3.setText(sobranDolares == false
+                ? billInBs > currentBs
+                ? textView_3.getText() + "Monto insuficiente"
+                : textView_3.getText() + "$" + Float.toString(currentDollars) + " y " + "Bs. " + billInBs
+                : textView_3.getText() + "No son necesarios los bolivares");
     }
 }
