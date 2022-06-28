@@ -24,16 +24,16 @@ public class MainActivity extends AppCompatActivity {
         textView_currentBs = findViewById(R.id.bolivaresActuales);
     }
 
-    // Funcion para calcular el pago
-    public void paymentCalculator(View view) {
+    // Para enviar los datos a la siguiente Activity
+    public void sendData(View view) {
 
-        float billInBs = 0;
+        // float billInBs = 0;
         float billInDollars = Float.parseFloat(textView_billInDollars.getText().toString());
         float dollarValue = Float.parseFloat(textView_dollarValue.getText().toString());
         float currentDollars = Float.parseFloat(textView_currentDollars.getText().toString());
         float currentBs = Float.parseFloat(textView_currentBs.getText().toString());
 
-        if (currentDollars >= billInDollars) {
+        /*if (currentDollars >= billInDollars) {
             currentDollars -= billInDollars; // Pago solo en dolares.
         } else {
             billInDollars -= currentDollars; // Pago una parte de dolares.
@@ -45,12 +45,14 @@ public class MainActivity extends AppCompatActivity {
                 billInBs -= currentBs; // Pago otra parte en dolares.
                 currentBs = 0; // Me quedo sin bs
             }
-        }
+        }*/
 
         Intent intent = new Intent(this, OutputsActivity.class);
+        intent.putExtra("billInDollars", billInDollars);
+        intent.putExtra("dollarValue", dollarValue);
         intent.putExtra("currentDollars", currentDollars);
         intent.putExtra("currentBs", currentBs);
-        intent.putExtra("billInBs", billInBs);
+        // intent.putExtra("billInBs", billInBs);
         startActivity(intent);
     }
 }

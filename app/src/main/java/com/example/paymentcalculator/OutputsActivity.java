@@ -8,7 +8,7 @@ import android.widget.TextView;
 public class OutputsActivity extends AppCompatActivity {
 
     TextView textView_1, textView_2, textView_3;
-    float currentDollars, currentBs, billInBs;
+    float billInDollars, dollarValue, currentDollars, currentBs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,10 @@ public class OutputsActivity extends AppCompatActivity {
         textView_3 = findViewById(R.id.conBolivares);
 
         Bundle data = this.getIntent().getExtras();
+        billInDollars = data.getFloat("billInDollars");
+        dollarValue = data.getFloat("dollarValue");
         currentDollars = data.getFloat("currentDollars");
         currentBs = data.getFloat("currentBs");
-        billInBs = data.getFloat("billInBs");
+        // billInBs = data.getFloat("billInBs");
     }
 }
