@@ -14,6 +14,9 @@
         android:theme="@style/Theme.PaymentCalculator"
         tools:targetApi="31">
         <activity
+            android:name=".AddProduct"
+            android:exported="false" />
+        <activity
             android:name=".Main"
             android:exported="false" />
         <activity
