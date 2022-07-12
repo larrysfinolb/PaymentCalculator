@@ -61,25 +61,25 @@ public class MainActivity extends AppCompatActivity {
 
     private void calculator() {
         if (products.size() > 0) {
-            double total = 0;
+            float total = 0;
             for (String product : products) {
                 String[] description = product.split("-");
-                double subtotal = Double.parseDouble(description[description.length - 1]);
+                float subtotal = Float.parseFloat(description[description.length - 1]);
                 total += subtotal;
             }
-            textViewTotal.setText("Total a pagar en $: " + Double.toString(total));
+            textViewTotal.setText("Total a pagar en $: " + String.format("%.2f", total));
 
 
             if (!editTextDollars.getText().toString().equals("")) {
-                double yourDollars = Double.parseDouble(editTextDollars.getText().toString());
-                double oweDollars = total - yourDollars;
+                float yourDollars = Float.parseFloat(editTextDollars.getText().toString());
+                float oweDollars = total - yourDollars;
                 oweDollars = oweDollars >= 0 ? oweDollars : 0;
-                textViewOweDollars.setText("Restas de pagar en $: " + Double.toString(oweDollars));
+                textViewOweDollars.setText("Restas de pagar en $: " + String.format("%.2f", oweDollars));
                 if (!editTextRateDollar.getText().toString().equals("")) {
-                    double rateDollar = Double.parseDouble(String.valueOf(editTextRateDollar.getText()));
-                    double willPayBs = oweDollars * rateDollar;
+                    float rateDollar = Float.parseFloat(String.valueOf(editTextRateDollar.getText()));
+                    float willPayBs = oweDollars * rateDollar;
                     willPayBs = willPayBs >= 0 ? willPayBs : 0;
-                    textViewWillPayBs.setText("Pagaras en Bs: " + Double.toString(willPayBs));
+                    textViewWillPayBs.setText("Pagaras en Bs: " + String.format("%.2f", willPayBs));
                 }
             }
         }

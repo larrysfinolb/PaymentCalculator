@@ -31,7 +31,7 @@ public class AddProduct extends AppCompatActivity {
                 if (!pc.getText().toString().equals("") && !pu.getText().toString().equals("")){
                     float puF = Float.parseFloat(String.valueOf(pu.getText()));
                     float pcF = Float.parseFloat(String.valueOf(pc.getText()));
-                    total.setText("SubTotal a Pagar: " + (puF * pcF) + "$");
+                    total.setText("SubTotal a Pagar: " + String.format("%.2f", (puF * pcF)) + "$");
                 }
             }
         });
@@ -40,7 +40,7 @@ public class AddProduct extends AppCompatActivity {
     public void sentProduct(View view){
         float puF = Float.parseFloat(String.valueOf(pu.getText()));
         float pcF = Float.parseFloat(String.valueOf(pc.getText()));
-        Products.addProduct("-" + name.getText() + " - " + pu.getText() + " - " + pc.getText() + " - " + String.valueOf(puF * pcF));
+        Products.addProduct("-" + name.getText() + " - " + pu.getText() + " - " + pc.getText() + " - " + String.format("%.2f", (puF * pcF)));
 
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
