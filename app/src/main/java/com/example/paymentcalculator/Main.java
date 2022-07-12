@@ -2,6 +2,7 @@ package com.example.paymentcalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -33,7 +34,7 @@ public class Main extends AppCompatActivity {
         textViewOweDollars = findViewById(R.id.textViewOweDollars);
         textViewWillPayBs = findViewById(R.id.textViewWillPayBs);
 
-        products = new String[2];
+        products = (String[]) Products.getProducts().toArray();
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, products);
         spinner.setAdapter(adapter);
 
@@ -69,6 +70,11 @@ public class Main extends AppCompatActivity {
         double rateDollar = Double.parseDouble(String.valueOf(editTextRateDollar.getText()));
         double willPayBs = oweDollars * rateDollar;
         textViewWillPayBs.setText(Double.toString(willPayBs));
+    }
+
+    public void addProduct(View view) {
+        Intent intent = new Intent(this, AddProduct.class);
+        startActivity(intent);
     }
 
     public void deleateProduct(View view) {
