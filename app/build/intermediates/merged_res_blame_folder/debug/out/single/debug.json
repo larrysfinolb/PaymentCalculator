@@ -44,10 +44,6 @@
         "source": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-main-27:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.paymentcalculator.app-merged_res-25:/layout_outputs.xml.flat",
-        "source": "com.example.paymentcalculator.app-main-27:/layout/outputs.xml"
-    },
-    {
         "merged": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-merged_res-25:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-main-27:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
@@ -64,8 +60,16 @@
         "source": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-main-27:\\xml\\backup_rules.xml"
     },
     {
+        "merged": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-merged_res-25:\\layout_activity_add_product.xml.flat",
+        "source": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-main-27:\\layout\\activity_add_product.xml"
+    },
+    {
         "merged": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-main-27:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-merged_res-25:\\layout_main.xml.flat",
+        "source": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-main-27:\\layout\\main.xml"
     },
     {
         "merged": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-merged_res-25:\\layout_outputs.xml.flat",
@@ -74,5 +78,9 @@
     {
         "merged": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-merged_res-25:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\aleja\\.gradle\\daemon\\7.3.3\\com.example.paymentcalculator.app-main-27:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.paymentcalculator.app-merged_res-25:/layout_activity_main.xml.flat",
+        "source": "com.example.paymentcalculator.app-main-27:/layout/activity_main.xml"
     }
 ]

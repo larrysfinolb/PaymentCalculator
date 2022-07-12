@@ -3162,9 +3162,9 @@
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "16",
+                        "startOffsets": "17",
                         "endColumns": "54",
-                        "endOffsets": "66"
+                        "endOffsets": "67"
                     },
                     "to": {
                         "startLines": "1597",

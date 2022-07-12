@@ -2606,13 +2606,14 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
-id bolivaresActuales
 id bottom
 id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btnCalcular
+id button
+id button2
+id button3
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2677,7 +2678,6 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
-id dolaresActuales
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -2693,6 +2693,12 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextDollars
+id editTextNumberDecimal6
+id editTextNumberDecimal7
+id editTextNumberSigned
+id editTextRateDollar
+id editTextTextPersonName
 id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
@@ -2763,6 +2769,8 @@ id legacy
 id line1
 id line3
 id linear
+id linearLayout
+id linearLayout2
 id listMode
 id list_item
 id masked
@@ -2797,7 +2805,6 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
-id montoTotal
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -2915,6 +2922,7 @@ id sobranDolares
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner
 id spline
 id split_action_bar
 id spread
@@ -2950,7 +2958,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id tasaDolar
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2963,7 +2970,13 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView2
+id textView3
+id textView4
+id textView8
+id textView9
+id textViewOweDollars
+id textViewTotal
+id textViewWillPayBs
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3103,6 +3116,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_product
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3124,6 +3138,7 @@ layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
 layout m3_auto_complete_simple_item
+layout main
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

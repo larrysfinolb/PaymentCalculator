@@ -21,6 +21,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.PaymentCalculator" >
         <activity
+            android:name="com.example.paymentcalculator.AddProduct"
+            android:exported="false" />
+        <activity
+            android:name="com.example.paymentcalculator.Main"
+            android:exported="false" />
+        <activity
             android:name="com.example.paymentcalculator.OutputsActivity"
             android:exported="false" />
         <activity

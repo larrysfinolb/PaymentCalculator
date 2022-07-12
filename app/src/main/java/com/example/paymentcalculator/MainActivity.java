@@ -5,39 +5,84 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Declaramos las variables necesarias
-    TextView textView_billInDollars;
-    TextView textView_dollarValue;
-    TextView textView_currentDollars, textView_currentBs;
+    private EditText editTextDollars;
+    private EditText editTextRateDollar;
+    private Spinner spinner;
+    private TextView textViewTotal;
+    private TextView textViewOweDollars;
+    private TextView textViewWillPayBs;
+
+
+    private String[] products = {"|Pollo|P/U 2.6|Peso 4|35", "|Vaca|P/U 2.6|Peso 4|40"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Inicializamos las variables necesarias apartir del id del componenente correspondiente
-        textView_billInDollars = findViewById(R.id.montoTotal);
-        textView_dollarValue = findViewById(R.id.tasaDolar);
-        textView_currentDollars = findViewById(R.id.dolaresActuales);
-        textView_currentBs = findViewById(R.id.bolivaresActuales);
+        editTextDollars = findViewById(R.id.editTextDollars);
+        editTextRateDollar = findViewById(R.id.editTextRateDollar);
+        spinner = findViewById(R.id.spinner);
+        textViewTotal = findViewById(R.id.textViewTotal);
+        textViewOweDollars = findViewById(R.id.textViewOweDollars);
+        textViewWillPayBs = findViewById(R.id.textViewWillPayBs);
+
+        //products = (String[]) Products.getProducts().toArray();
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, products);
+        spinner.setAdapter(adapter);
+
+        editTextDollars.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if (!b) calculator();
+            }
+        });
+        editTextRateDollar.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if (!b) calculator();
+            }
+        });
+
+        calculator();
     }
 
-    // Funcion para enviar los datos a la siguiente Activity
-    public void sendData(View view) {
-        float billInDollars = Float.parseFloat(textView_billInDollars.getText().toString());
-        float dollarValue = Float.parseFloat(textView_dollarValue.getText().toString());
-        float currentDollars = Float.parseFloat(textView_currentDollars.getText().toString());
-        float currentBs = Float.parseFloat(textView_currentBs.getText().toString());
+    private void calculator() {
+        if (products.length > 0) {
+            double total = 0;
+            for (String product : products) {
+                String[] description = product.split("|");
+                System.out.println("-------------------------------");
+                System.out.println(description[description.length - 1]);
+                System.out.println("-------------------------------");
+                /*double subtotal = Double.parseDouble(description[description.length - 1]);
+                total += subtotal;*/
+            }
+            /*textViewTotal.setText(Double.toString(total));
 
-        Intent intent = new Intent(this, OutputsActivity.class);
-        intent.putExtra("billInDollars", billInDollars);
-        intent.putExtra("dollarValue", dollarValue);
-        intent.putExtra("currentDollars", currentDollars);
-        intent.putExtra("currentBs", currentBs);
+            double yourDollars = Double.parseDouble(String.valueOf(editTextDollars.getText()));
+            double oweDollars = total - yourDollars;
+            textViewOweDollars.setText(Double.toString(oweDollars));
+
+            double rateDollar = Double.parseDouble(String.valueOf(editTextRateDollar.getText()));
+            double willPayBs = oweDollars * rateDollar;
+            textViewWillPayBs.setText(Double.toString(willPayBs));*/
+        }
+    }
+
+    public void addProduct(View view) {
+        Intent intent = new Intent(this, AddProduct.class);
         startActivity(intent);
+    }
+
+    public void deleateProduct(View view) {
+        int position = spinner.getSelectedItemPosition();
     }
 }
