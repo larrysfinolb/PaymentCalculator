@@ -10,6 +10,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText editTextDollars;
@@ -20,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView textViewWillPayBs;
 
 
-    private String[] products = {"|Pollo|P/U 2.6|Peso 4|35", "|Vaca|P/U 2.6|Peso 4|40"};
+    private ArrayList<String> products = Products.getProducts();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         textViewOweDollars = findViewById(R.id.textViewOweDollars);
         textViewWillPayBs = findViewById(R.id.textViewWillPayBs);
 
-        //products = (String[]) Products.getProducts().toArray();
+        Collections.copy(products, Products.getProducts());
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, products);
         spinner.setAdapter(adapter);
 
@@ -55,25 +60,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void calculator() {
-        if (products.length > 0) {
+        if (products.size() > 0) {
             double total = 0;
             for (String product : products) {
-                String[] description = product.split("|");
-                System.out.println("-------------------------------");
-                System.out.println(description[description.length - 1]);
-                System.out.println("-------------------------------");
-                /*double subtotal = Double.parseDouble(description[description.length - 1]);
-                total += subtotal;*/
+                String[] description = product.split("-");
+                double subtotal = Double.parseDouble(description[description.length - 1]);
+                total += subtotal;
             }
-            /*textViewTotal.setText(Double.toString(total));
+            textViewTotal.setText("Total a pagar en $: " + Double.toString(total));
 
-            double yourDollars = Double.parseDouble(String.valueOf(editTextDollars.getText()));
-            double oweDollars = total - yourDollars;
-            textViewOweDollars.setText(Double.toString(oweDollars));
 
-            double rateDollar = Double.parseDouble(String.valueOf(editTextRateDollar.getText()));
-            double willPayBs = oweDollars * rateDollar;
-            textViewWillPayBs.setText(Double.toString(willPayBs));*/
+            if (!editTextDollars.getText().toString().equals("")) {
+                double yourDollars = Double.parseDouble(editTextDollars.getText().toString());
+                double oweDollars = total - yourDollars;
+                oweDollars = oweDollars >= 0 ? oweDollars : 0;
+                textViewOweDollars.setText("Restas de pagar en $: " + Double.toString(oweDollars));
+                if (!editTextRateDollar.getText().toString().equals("")) {
+                    double rateDollar = Double.parseDouble(String.valueOf(editTextRateDollar.getText()));
+                    double willPayBs = oweDollars * rateDollar;
+                    willPayBs = willPayBs >= 0 ? willPayBs : 0;
+                    textViewWillPayBs.setText("Pagaras en Bs: " + Double.toString(willPayBs));
+                }
+            }
         }
     }
 
@@ -82,7 +90,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void deleateProduct(View view) {
+    public void deleteProduct(View view) {
         int position = spinner.getSelectedItemPosition();
+        Products.removeProduct(position);
+        calculator();
     }
 }

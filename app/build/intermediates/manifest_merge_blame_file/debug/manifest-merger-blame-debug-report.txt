@@ -11,7 +11,7 @@
 9-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:6:5-34:19
+11-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:6:5-28:19
 12        android:allowBackup="true"
 12-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:7:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,66 +29,53 @@
 19-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:12:9-54
 20        android:supportsRtl="true"
 20-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:13:9-35
-21        android:testOnly="true"
-22        android:theme="@style/Theme.PaymentCalculator" >
-22-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:14:9-55
-23        <activity
-23-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:16:9-18:40
-24            android:name="com.example.paymentcalculator.AddProduct"
-24-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:17:13-39
-25            android:exported="false" />
-25-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:18:13-37
-26        <activity
-26-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:19:9-21:40
-27            android:name="com.example.paymentcalculator.Main"
-27-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:20:13-33
-28            android:exported="false" />
-28-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:21:13-37
-29        <activity
-29-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:22:9-24:40
-30            android:name="com.example.paymentcalculator.OutputsActivity"
-30-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:23:13-44
-31            android:exported="false" />
-31-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:24:13-37
-32        <activity
-32-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:25:9-33:20
-33            android:name="com.example.paymentcalculator.MainActivity"
-33-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:26:13-41
-34            android:exported="true" >
-34-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:27:13-36
-35            <intent-filter>
-35-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:28:13-32:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:29:17-69
-36-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:29:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:31:17-77
-38-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:31:27-74
-39            </intent-filter>
-40        </activity>
-41
-42        <provider
-42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-43            android:name="androidx.startup.InitializationProvider"
-43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-44            android:authorities="com.example.paymentcalculator.androidx-startup"
-44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-45            android:exported="false" >
-45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-46            <meta-data
-46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-47                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-48                android:value="androidx.startup" />
-48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-49            <meta-data
-49-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\aleja\.gradle\caches\transforms-3\45759b04922bc547a81513b82a38ba1e\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-50                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-50-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\aleja\.gradle\caches\transforms-3\45759b04922bc547a81513b82a38ba1e\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-51                android:value="androidx.startup" />
-51-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\aleja\.gradle\caches\transforms-3\45759b04922bc547a81513b82a38ba1e\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-52        </provider>
-53    </application>
-54
-55</manifest>
+21        android:theme="@style/Theme.PaymentCalculator" >
+21-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:14:9-55
+22        <activity
+22-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:16:9-18:40
+23            android:name="com.example.paymentcalculator.AddProduct"
+23-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:17:13-39
+24            android:exported="false" />
+24-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:18:13-37
+25        <activity
+25-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:19:9-27:20
+26            android:name="com.example.paymentcalculator.MainActivity"
+26-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:20:13-41
+27            android:exported="true" >
+27-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:21:13-36
+28            <intent-filter>
+28-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:22:13-26:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:23:17-69
+29-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:23:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:25:17-77
+31-->C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:25:27-74
+32            </intent-filter>
+33        </activity>
+34
+35        <provider
+35-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+36            android:name="androidx.startup.InitializationProvider"
+36-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+37            android:authorities="com.example.paymentcalculator.androidx-startup"
+37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+38            android:exported="false" >
+38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+39            <meta-data
+39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+40                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+41                android:value="androidx.startup" />
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+42            <meta-data
+42-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\aleja\.gradle\caches\transforms-3\45759b04922bc547a81513b82a38ba1e\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+43                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+43-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\aleja\.gradle\caches\transforms-3\45759b04922bc547a81513b82a38ba1e\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+44                android:value="androidx.startup" />
+44-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\aleja\.gradle\caches\transforms-3\45759b04922bc547a81513b82a38ba1e\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+45        </provider>
+46    </application>
+47
+48</manifest>

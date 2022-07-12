@@ -2643,7 +2643,6 @@ id clockwise
 id closest
 id collapseActionView
 id compress
-id conBolivares
 id confirm_button
 id constraint
 id container
@@ -2696,7 +2695,6 @@ id east
 id editTextDollars
 id editTextNumberDecimal6
 id editTextNumberDecimal7
-id editTextNumberSigned
 id editTextRateDollar
 id editTextTextPersonName
 id edit_query
@@ -2910,7 +2908,6 @@ id showCustom
 id showHome
 id showTitle
 id sin
-id sinBolivares
 id skipCollapsed
 id skipped
 id slide
@@ -2918,7 +2915,6 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
-id sobranDolares
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -2969,9 +2965,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView3
 id textView4
+id textView7
 id textView8
 id textView9
 id textViewOweDollars
@@ -3138,7 +3134,6 @@ layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
 layout m3_auto_complete_simple_item
-layout main
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -3189,7 +3184,6 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout outputs
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

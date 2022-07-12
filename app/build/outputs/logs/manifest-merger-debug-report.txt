@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [com.google.android.material:material:1.6.0] C:\Users\aleja\.gradle\caches\transforms-3\1217d3aa52fa78bda9a0244b3a55003a\transformed\material-1.6.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\aleja\.gradle\caches\transforms-3\af607507a3d3d50a4db50c5cd4e7b0c6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\aleja\.gradle\caches\transforms-3\3b1bc201b3bca652ca8cba6f27421397\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
@@ -43,27 +43,27 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\aleja\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\01bc8368ad5575d4d6f30c21d182f95c\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\aleja\.gradle\caches\transforms-3\72f1940f015bcc005a737b3aab30d906\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\aleja\.gradle\caches\transforms-3\e36aaea95b1e10850d139e7025f21ff0\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:4:5-44
 		INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:6:5-34:19
+ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:6:5-28:19
 MERGED from [com.google.android.material:material:1.6.0] C:\Users\aleja\.gradle\caches\transforms-3\1217d3aa52fa78bda9a0244b3a55003a\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.0] C:\Users\aleja\.gradle\caches\transforms-3\1217d3aa52fa78bda9a0244b3a55003a\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\aleja\.gradle\caches\transforms-3\af607507a3d3d50a4db50c5cd4e7b0c6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -104,34 +104,22 @@ ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\
 		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:18:13-37
 	android:name
 		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:17:13-39
-activity#com.example.paymentcalculator.Main
-ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:19:9-21:40
-	android:exported
-		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:21:13-37
-	android:name
-		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:20:13-33
-activity#com.example.paymentcalculator.OutputsActivity
-ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:22:9-24:40
-	android:exported
-		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:24:13-37
-	android:name
-		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:23:13-44
 activity#com.example.paymentcalculator.MainActivity
-ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:25:9-33:20
+ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:19:9-27:20
 	android:exported
-		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:27:13-36
+		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:21:13-36
 	android:name
-		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:26:13-41
+		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:20:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml:25:27-74
 uses-sdk
 INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\aleja\Desktop\Workspace\Urbe\PaymentCalculator\app\src\main\AndroidManifest.xml

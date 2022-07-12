@@ -17,12 +17,6 @@
             android:name=".AddProduct"
             android:exported="false" />
         <activity
-            android:name=".Main"
-            android:exported="false" />
-        <activity
-            android:name=".OutputsActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
