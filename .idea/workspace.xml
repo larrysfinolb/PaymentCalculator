@@ -10,17 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60834351-fc4f-4f89-a890-809be9c10efa" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/paymentcalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/paymentcalculator/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/paymentcalculator/AddProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/paymentcalculator/AddProduct.java" afterDir="false" />
+>>>>>>> refs/remotes/origin/main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[e2663edf]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -61,6 +66,9 @@
   </component>
   <component name="RecentsManager">
     <key name="android.template.-397538055">
+      <recent name="com.example.paymentcalculator" />
+    </key>
+    <key name="android.template.203714163">
       <recent name="com.example.paymentcalculator" />
     </key>
     <key name="android.template.-369212057">
