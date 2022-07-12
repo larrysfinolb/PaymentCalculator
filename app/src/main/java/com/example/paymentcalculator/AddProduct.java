@@ -2,6 +2,7 @@ package com.example.paymentcalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -48,6 +49,9 @@ public class AddProduct extends AppCompatActivity {
         float puF = Float.parseFloat(String.valueOf(pu.getText()));
         float pcF = Float.parseFloat(String.valueOf(pc.getText()));
         Products.addProduct("|" + name.getText() + "|P/U " + pu.getText() + "|Peso " + pc.getText() + "|Total " + String.valueOf(puF * pcF) + "$|");
+
+        Intent intent = new Intent(this, Main.class);
+        startActivity(intent);
     }
 
 }
